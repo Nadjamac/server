@@ -1,7 +1,17 @@
+import { IsNotEmpty, IsUrl, IsString } from 'class-validator';
 export class CreateMovieDto {
+  @IsString()
   name: string;
-  year: Date;
-  length: Date;
+
+  @IsString()
+  year: string;
+
+  @IsString()
+  length: string;
+
+  @IsNotEmpty()
   storyline: string;
+
+  @IsUrl()
   image: string;
 }
