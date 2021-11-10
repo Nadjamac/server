@@ -56,4 +56,5 @@ export class MoviesService {
         movies: true,
       },
     });
-  // 
+  }
+}
